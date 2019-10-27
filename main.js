@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const IMDB = require('imdb-api');
+const prompt = require('prompt')
 
 const client = new Discord.Client();
 const apiKey = "1322d070"
@@ -65,4 +66,6 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
 })
 
-client.login("NjM4MDI0OTgzNDA2MzEzNDcy.XbWtLQ.wXBKypV6g00xoLHfBGYgiKaiEj4");
+prompt.start();
+
+prompt.get(['token'], (err, res) => client.login(res.token).catch(err => console.log(err.message)))
