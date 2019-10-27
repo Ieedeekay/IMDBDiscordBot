@@ -1,0 +1,16 @@
+{
+  "name": "imdbmoviebot",
+  "version": "1.0.0",
+  "description": "A discord bot that fetches IMDB movie data anda presents it to the user",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jamar Sullivan Jr.",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "imdb-api": "^4.0.3"
+  }
+}
